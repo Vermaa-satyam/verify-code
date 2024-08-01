@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <h1>email verification</h1>
+
+            <div class="email">
+                <label for="email">email</label>
+                <input type="email" name="email" id="email" >
+            </div>
+
+            <button id="btn" onclick="show()"> send verification code</button>
+            <div class="sent"><h3>otp sent sucessfully !!</h3></div>
+        </div>
+
+        <div class="container-two" id="ctr" style="display: none;">
+            <label for="otp"> enter the verification code</label>
+            <input type="text" id="enter-input">
+           <center> <button id="verify-btn" class="verify-btn" onclick="verify()">verify</button></center>
+            <div class="check" id="check">verification code sent to your email</div>
+            
+        </div>
+        
+    </div>
+
+    <script src="style.js"></script>
+</body>
+
+</html>
